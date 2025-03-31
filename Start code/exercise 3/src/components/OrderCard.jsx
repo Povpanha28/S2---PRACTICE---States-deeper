@@ -12,7 +12,7 @@ export default function OrderCard({order,setOrders}) {
     );
   };
   const decrement = () => {
-    if (quantity > 1) {
+    if (quantity > 0) {
       setQuantity(quantity - 1);
       setOrders((prevOrders) =>
         prevOrders.map((o) =>
